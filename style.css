@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+section {
+    background-color: rgb(12, 12, 27);
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* sidebar nav */
+.sidenav {
+    width: 5%;
+    height: calc(100vh - 20px);
+    color: white;
+    background-color: rgba(0, 128, 128, 0.048);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.3em;
+    top: 0;
+    position: sticky;
+}
+
+.img-profile {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.img-profile img {
+    width: 60px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 100%;
+    height: 500px;
+}
+
+.links a{
+    margin-top: 1.3em;
+}
+
+.links .gg-home-alt, .gg-user-list, .gg-database, .gg-loadbar-doc, .gg-chart {
+    /* This value will multiple the actual size  */
+    --ggs: 1.4;
+    color: whitesmoke;
+    margin: auto;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+}
+
+.selected {
+    background-color: rgba(25, 53, 138, 0.226);
+}
+
+    /* Dashboard */
+.flex {
+        display: flex;
+}
+
+
+.content {
+    background-color: rgb(243,244,251);
+    width: 90%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content-nav {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 1.2em;
+}
+
+    /* Adjust search icon position */
+.gg-searchs {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+}
+
+.gg-searchs::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+.gg-searchs, .gg-bell, .gg-comment {
+    /* This value will multiple the actual size  */
+    --ggs: 1;
+    color: rgb(11, 23, 59);
+    margin: auto;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    margin: 1em;
+}
+
+.searcher-nav {
+    display: flex;
+    width: 310px;
+    margin-right: 10em;
+}
+
+input {
+    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.27);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    border: none;
+    height: 40px;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 40px;
+}
+
+
+
+.numbers-card {
+    background-color: rgb(17, 17, 44);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.055);
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 13px;
+    font-weight: 500;
+    color: whitesmoke;
+}

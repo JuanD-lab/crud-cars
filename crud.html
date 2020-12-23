@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css.gg -->
+<link href='https://css.gg/css' rel='stylesheet'>
+
+<!-- UNPKG -->
+<link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
+<!-- JSDelivr -->
+<link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    <title>CRUD Auto-Sales</title>
+</head>
+<body>
+    <section class="">
+        <div class="flex wrapper position-relative">
+            <div class="sidenav">
+                <div class="img-profile"><img src="/man.png" alt=""></div>
+                <div class="links">
+                    <a href="#"><i class="gg-home-alt"></i></a>
+                    <a href="#"><i class="gg-user-list"></i></a>
+                    <a href="#" class="selected"><i class="gg-database"></i></a>
+                    <a href="#"><i class="gg-loadbar-doc"></i></a>
+                    <a href="#"><i class="gg-chart"></i></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-nav">
+                    <div class="searcher-nav">
+                        <a href="#" class="search"><i class="gg-searchs"></i></a>
+                        <label for="">
+                            <input type="search" name="" id="" placeholder="Search">
+                        </label>
+                    </div>
+                    <div class="flex">
+                        <a href="#"><i class="gg-bell"></i></a>
+                        <a href="#"><i class="gg-comment"></i></a>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="numbers row">
+                        <div class="col-3">
+                            <div class="numbers-card">
+                                <p>$58384</p>
+                                <p>Ingreses auto</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="numbers-card">
+                                <p></p>
+                                <p>Ingreses auto</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="numbers-card">
+                                <p></p>
+                                <p>Ingreses auto</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="numbers-card">
+                                <p id="total-autos"></p>
+                                <p>Autos Registrados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="form-auto" onsubmit="event.preventDefault(), addAutos()">
+                                <div class="form-group">
+                                    <label for="brand">Marca</label>
+                                    <input type="text" class="form-control" id="brand" placeholder="Ingresa tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="model">Modelo</label>
+                                    <input type="text" class="form-control" id="model" placeholder="Ingresa el modelo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="color">Color</label>
+                                    <input type="text" class="form-control" id="color" placeholder="Ingresa el color" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Año</label>
+                                    <input type="number" class="form-control" id="date" placeholder="Ingresa el año" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="price">Precio</label>
+                                    <input type="number" class="form-control" id="price" placeholder="Ingresa el precio" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Color</th>
+                                <th>Año</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody id="container-autos">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
